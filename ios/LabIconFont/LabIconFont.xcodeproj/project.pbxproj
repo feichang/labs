@@ -21,6 +21,7 @@
 		DDB3E595187A5864001F3A9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB3E577187A5864001F3A9D /* UIKit.framework */; };
 		DDB3E59D187A5864001F3A9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDB3E59B187A5864001F3A9D /* InfoPlist.strings */; };
 		DDB3E59F187A5864001F3A9D /* LabIconFontTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB3E59E187A5864001F3A9D /* LabIconFontTests.m */; };
+		DDB3E5AB187A5A52001F3A9D /* uxiconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDB3E5AA187A5A52001F3A9D /* uxiconfont.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		DDB3E59A187A5864001F3A9D /* LabIconFontTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LabIconFontTests-Info.plist"; sourceTree = "<group>"; };
 		DDB3E59C187A5864001F3A9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DDB3E59E187A5864001F3A9D /* LabIconFontTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabIconFontTests.m; sourceTree = "<group>"; };
+		DDB3E5AA187A5A52001F3A9D /* uxiconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = uxiconfont.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		DDB3E57A187A5864001F3A9D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DDB3E5AA187A5A52001F3A9D /* uxiconfont.ttf */,
 				DDB3E57B187A5864001F3A9D /* LabIconFont-Info.plist */,
 				DDB3E57C187A5864001F3A9D /* InfoPlist.strings */,
 				DDB3E57F187A5864001F3A9D /* main.m */,
@@ -231,6 +234,7 @@
 				DDB3E58C187A5864001F3A9D /* Images.xcassets in Resources */,
 				DDB3E57E187A5864001F3A9D /* InfoPlist.strings in Resources */,
 				DDB3E587187A5864001F3A9D /* Main.storyboard in Resources */,
+				DDB3E5AB187A5A52001F3A9D /* uxiconfont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

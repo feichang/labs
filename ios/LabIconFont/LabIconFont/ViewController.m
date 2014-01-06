@@ -18,6 +18,25 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    //检查字体是否生效
+    for (NSString* family in [UIFont familyNames])
+    {
+        NSLog(@"%@", family);
+        
+        for (NSString* name in [UIFont fontNamesForFamilyName: family])
+        {
+            NSLog(@"  %@", name);
+        }
+    }
+    
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 60, 300, 100)];
+    label.font = [UIFont fontWithName:@"uxIconFont" size:100];
+    label.text = @"\U00003462";
+    label.textColor = [UIColor redColor];
+    [self.view addSubview:label];
+    
 }
 
 - (void)didReceiveMemoryWarning
