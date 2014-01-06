@@ -7,6 +7,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>uxiconfont.ttf</string>
+		<string>diy.ttf</string>
 	</array>
 	<key>CFBundleDisplayName</key>
 	<string>${PRODUCT_NAME}</string>

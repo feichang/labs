@@ -43,6 +43,12 @@
     label1.textColor = [UIColor blackColor];
     [self.view addSubview:label1];
     
+    
+    UILabel *label2 = [[UILabel alloc] initWithFrame:CGRectMake(135, 300, 50, 50)];
+    label2.font = [UIFont fontWithName:@"diy" size:50];
+    label2.text = @"1";
+    label2.textColor = [UIColor blueColor];
+    [self.view addSubview:label2];
 }
 
 - (void)didReceiveMemoryWarning
