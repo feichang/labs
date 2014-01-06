@@ -22,6 +22,9 @@
 		DDB3E61B187A9027001F3A9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB3E5FA187A9027001F3A9D /* UIKit.framework */; };
 		DDB3E623187A9027001F3A9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDB3E621187A9027001F3A9D /* InfoPlist.strings */; };
 		DDB3E625187A9027001F3A9D /* NativeWithJSBridgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB3E624187A9027001F3A9D /* NativeWithJSBridgeTests.m */; };
+		DDB3E631187A96A9001F3A9D /* camera.html in Resources */ = {isa = PBXBuildFile; fileRef = DDB3E62E187A96A9001F3A9D /* camera.html */; };
+		DDB3E632187A96A9001F3A9D /* UIWebViewCallCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB3E630187A96A9001F3A9D /* UIWebViewCallCameraViewController.m */; };
+		DDB3E635187A9771001F3A9D /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB3E634187A9771001F3A9D /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,11 @@
 		DDB3E620187A9027001F3A9D /* NativeWithJSBridgeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NativeWithJSBridgeTests-Info.plist"; sourceTree = "<group>"; };
 		DDB3E622187A9027001F3A9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DDB3E624187A9027001F3A9D /* NativeWithJSBridgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeWithJSBridgeTests.m; sourceTree = "<group>"; };
+		DDB3E62E187A96A9001F3A9D /* camera.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = camera.html; sourceTree = "<group>"; };
+		DDB3E62F187A96A9001F3A9D /* UIWebViewCallCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebViewCallCameraViewController.h; sourceTree = "<group>"; };
+		DDB3E630187A96A9001F3A9D /* UIWebViewCallCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWebViewCallCameraViewController.m; sourceTree = "<group>"; };
+		DDB3E633187A9771001F3A9D /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		DDB3E634187A9771001F3A9D /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,11 @@
 		DDB3E5FC187A9027001F3A9D /* NativeWithJSBridge */ = {
 			isa = PBXGroup;
 			children = (
+				DDB3E633187A9771001F3A9D /* NSData+Base64.h */,
+				DDB3E634187A9771001F3A9D /* NSData+Base64.m */,
+				DDB3E62E187A96A9001F3A9D /* camera.html */,
+				DDB3E62F187A96A9001F3A9D /* UIWebViewCallCameraViewController.h */,
+				DDB3E630187A96A9001F3A9D /* UIWebViewCallCameraViewController.m */,
 				DDB3E605187A9027001F3A9D /* AppDelegate.h */,
 				DDB3E606187A9027001F3A9D /* AppDelegate.m */,
 				DDB3E608187A9027001F3A9D /* Main.storyboard */,
@@ -236,6 +249,7 @@
 				DDB3E612187A9027001F3A9D /* Images.xcassets in Resources */,
 				DDB3E601187A9027001F3A9D /* InfoPlist.strings in Resources */,
 				DDB3E60A187A9027001F3A9D /* Main.storyboard in Resources */,
+				DDB3E631187A96A9001F3A9D /* camera.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,10 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB3E632187A96A9001F3A9D /* UIWebViewCallCameraViewController.m in Sources */,
 				DDB3E610187A9027001F3A9D /* SecondViewController.m in Sources */,
 				DDB3E607187A9027001F3A9D /* AppDelegate.m in Sources */,
 				DDB3E60D187A9027001F3A9D /* FirstViewController.m in Sources */,
 				DDB3E603187A9027001F3A9D /* main.m in Sources */,
+				DDB3E635187A9771001F3A9D /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

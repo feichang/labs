@@ -7,12 +7,22 @@
 //
 
 #import "AppDelegate.h"
+#import "UIWebViewCallCameraViewController.h"
+#import "FirstViewController.h"
+#import "SecondViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    UIWebViewCallCameraViewController *webc = [[UIWebViewCallCameraViewController alloc] init];
+    FirstViewController *first =[[FirstViewController alloc] init];
+    SecondViewController *second = [[SecondViewController alloc] init];
+    self.window.rootViewController = webc;//3
+    [self.window makeKeyAndVisible];//4
+    
     return YES;
 }
 							

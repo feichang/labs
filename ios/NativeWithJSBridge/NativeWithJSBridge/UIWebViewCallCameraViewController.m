@@ -1,34 +1,31 @@
 //
-//  SecondViewController.m
-//  NativeWithJSBridge
+//  UIWebViewCallCameraViewController.m
+//  UIWebViewCallCamera
 //
-//  Created by Allen Wang on 14-1-6.
-//  Copyright (c) 2014年 taobao. All rights reserved.
+//  Created by lwme.cnblogs.com on 7/18/13.
+//  Copyright (c) 2013 lwme.cnblogs.com. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "UIWebViewCallCameraViewController.h"
+#import "NSData+Base64.h"
 
-@interface SecondViewController () <UIWebViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface UIWebViewCallCameraViewController ()<UIWebViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 {
     NSString *callback;
 }
 @end
 
-@implementation SecondViewController
-
+@implementation UIWebViewCallCameraViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    [self.view setBackgroundColor:[UIColor whiteColor]];
-    
-    UILabel *l = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, 100, 100)];
-    [l setText:@"test"];
-    [l setBackgroundColor:[UIColor redColor]];
-    [self.view addSubview:l];
     self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://10.68.187.0:8000/camera.html"]]];
+	// Do any additional setup after loading the view, typically from a nib.
+    self.webView.delegate = self;
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"camera" ofType:@"html"];
+    NSString *fileContent = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    [self.webView loadHTMLString:fileContent baseURL:nil];
     
     [self.view addSubview:self.webView];
 }
@@ -87,11 +84,11 @@
 {
     if ([[info objectForKey:UIImagePickerControllerMediaType] isEqualToString:@"public.image"]) {
         UIImage *originalImage = [info objectForKey:UIImagePickerControllerOriginalImage];
-        
+
         UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"正在处理图片..." message:@"\n\n"
-                                                    delegate:self
-                                           cancelButtonTitle:nil
-                                           otherButtonTitles:nil, nil];
+                                                delegate:self
+                                       cancelButtonTitle:nil
+                                       otherButtonTitles:nil, nil];
         
         UIActivityIndicatorView *loading = [[UIActivityIndicatorView alloc]
                                             initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
@@ -114,6 +111,4 @@
 {
     [self.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"%@('%@');", callback, data]];
 }
-
-
 @end
