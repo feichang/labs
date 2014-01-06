@@ -31,11 +31,17 @@
     }
     
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 60, 300, 100)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(110, 100, 100, 100)];
     label.font = [UIFont fontWithName:@"uxIconFont" size:100];
     label.text = @"\U00003462";
     label.textColor = [UIColor redColor];
     [self.view addSubview:label];
+    
+    UILabel *label1 = [[UILabel alloc] initWithFrame:CGRectMake(135, 300, 50, 50)];
+    label1.font = [UIFont fontWithName:@"uxIconFont" size:50];
+    label1.text = @"\U00003462";
+    label1.textColor = [UIColor blackColor];
+    [self.view addSubview:label1];
     
 }
 
