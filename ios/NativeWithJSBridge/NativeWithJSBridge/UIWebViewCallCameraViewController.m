@@ -25,7 +25,8 @@
     self.webView.delegate = self;
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"camera" ofType:@"html"];
     NSString *fileContent = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
-    [self.webView loadHTMLString:fileContent baseURL:nil];
+    //[self.webView loadHTMLString:fileContent baseURL:nil];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://10.68.187.0:8000/camera.html"]]];
     
     [self.view addSubview:self.webView];
 }
