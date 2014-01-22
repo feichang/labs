@@ -21,6 +21,7 @@
 		DD550CC1188E1C0200FF0457 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD550CA3188E1C0200FF0457 /* UIKit.framework */; };
 		DD550CC9188E1C0200FF0457 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD550CC7188E1C0200FF0457 /* InfoPlist.strings */; };
 		DD550CCB188E1C0200FF0457 /* SingletonPatternTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD550CCA188E1C0200FF0457 /* SingletonPatternTests.m */; };
+		DD550CD6188E1C6A00FF0457 /* ARCSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = DD550CD5188E1C6A00FF0457 /* ARCSingleton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		DD550CC6188E1C0200FF0457 /* SingletonPatternTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SingletonPatternTests-Info.plist"; sourceTree = "<group>"; };
 		DD550CC8188E1C0200FF0457 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD550CCA188E1C0200FF0457 /* SingletonPatternTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonPatternTests.m; sourceTree = "<group>"; };
+		DD550CD4188E1C6A00FF0457 /* ARCSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCSingleton.h; sourceTree = "<group>"; };
+		DD550CD5188E1C6A00FF0457 /* ARCSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCSingleton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				DD550CB5188E1C0200FF0457 /* ViewController.m */,
 				DD550CB7188E1C0200FF0457 /* Images.xcassets */,
 				DD550CA6188E1C0200FF0457 /* Supporting Files */,
+				DD550CD4188E1C6A00FF0457 /* ARCSingleton.h */,
+				DD550CD5188E1C6A00FF0457 /* ARCSingleton.m */,
 			);
 			path = SingletonPattern;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			files = (
 				DD550CB6188E1C0200FF0457 /* ViewController.m in Sources */,
 				DD550CB0188E1C0200FF0457 /* AppDelegate.m in Sources */,
+				DD550CD6188E1C6A00FF0457 /* ARCSingleton.m in Sources */,
 				DD550CAC188E1C0200FF0457 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

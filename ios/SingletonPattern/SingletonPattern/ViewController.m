@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "ARCSingleton.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) NSString *testString;
 
 @end
 
@@ -17,7 +20,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [ARCSingleton sharedInstance].testString = @"ARC单例";
+    NSLog(@"%@", [ARCSingleton sharedInstance].testString);
+
 }
 
 - (void)didReceiveMemoryWarning
